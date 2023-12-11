@@ -1,0 +1,7 @@
+run.dataset_name = "LitDataHumanObject"
+run.datadir = "Path to the dataset"
+run.model_name = "state_humanobject"
+
+run.max_steps = 400000
+run.log_every_n_steps = 100
+run.grad_max_norm = 0.001

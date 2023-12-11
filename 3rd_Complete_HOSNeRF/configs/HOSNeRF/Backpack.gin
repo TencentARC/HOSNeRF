@@ -1,0 +1,16 @@
+### 360-v2 Specific Arguments
+
+run.dataset_name = "LitDataHumanObject"
+run.datadir = "Path to the dataset"
+run.bkgd_path = "Path to the trained background checkpoint"
+run.human_path = "Path to the trained human-object checkpoint"
+
+run.model_name = "hosnerf"
+run.max_steps = 200000
+run.log_every_n_steps = 100
+run.grad_max_norm = 0.001
+
+LitDataHumanObject.near_bkg = 0.1
+LitDataHumanObject.far_bkg = 1e6
+
+MipNeRF360.opaque_background = True
