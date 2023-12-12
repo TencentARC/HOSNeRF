@@ -149,8 +149,8 @@ class CfgNode(dict):
         r = ""
         s = []
         for k, v in sorted(self.items()):
-            seperator = "\n" if isinstance(v, CfgNode) else " "
-            attr_str = "{}:{}{}".format(str(k), seperator, str(v))
+            separator = "\n" if isinstance(v, CfgNode) else " "
+            attr_str = "{}:{}{}".format(str(k), separator, str(v))
             attr_str = _indent(attr_str, 2)
             s.append(attr_str)
         r += "\n".join(s)
